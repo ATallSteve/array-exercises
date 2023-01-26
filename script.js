@@ -47,12 +47,25 @@ console.log(myArray)
 let text = `<ul>`
 myArray.forEach(mysteryFunction)
 text += `</ul>`
-document.getElementById('solutions').innerHTML = text
-
+// document.getElementById('solutions').innerHTML = text
+//(commented because it was causing errors)
 function mysteryFunction(string) {
     text += `<li> ${string} </li> `
 }
 console.log(text)
-// It creates an HTML list of the items of the array
+//  <ul>
+//      <li> Apples </li> 
+//      <li> Bananas </li> 
+//      <li> Cheese </li> 
+//      <li> Crackers </li> 
+//      <li> Dates </li> 
+//  </ul>
+//It creates an HTML list of the items of the array
 
 //Exercise 55
+myFirstArray = [1,2,3]
+mySecondArray = ['hat','cat','bat']
+console.log(myFirstArray.concat(mySecondArray))
+console.log(mySecondArray.concat(myFirstArray))
+//First one:[1, 2, 3, 'hat', 'cat', 'bat']
+//Second one:['hat', 'cat', 'bat', 1, 2, 3]
